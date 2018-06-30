@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="10" id="app.memes.mobile" ios-CFBundleVersion="0.0.1" version="0.0.1" windows-packageVersion="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name> Memes</name>
+    <description> Miranda </description>
+    <author> Miranda </author>
+    <content src="index.html" />
+    <preference name="android-build-tool" value="gradle" />
+    <preference name="phonegap-version" value="cli-7.0.1" />
+    <preference name="xwalkMultipleApk" value="false" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="android-minSdkVersion" value="15" />
+        <preference name="android-targetSdkVersion" value="20" />
+        <preference name="android-installLocation" value="auto" />
+        <preference name="android-signed" value="true" />
+        <preference name="AndroidLaunchMode" value="singleTop" />
+        <preference name="Fullscreen" value="false" />
+        <preference name="AndroidPersistentFileLocation" value="Internal" />
+        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <preference name="ios-configuration" value="production" />
+        <preference name="deployment-target" value="8.0" />
+        <preference name="iosPersistentFileLocation" value="Library" />
+        <preference name="iosPersistentFileLocation" value="Compatibility" />
+    </platform>
+    <platform name="windows">
+        <preference name="windows-publisher-display-name" value="Agely" />
+        <preference name="windows-publisher-id" value="115324FB-8194-427D-A2B9-7A609AD6ECE0" />
+        <preference name="Orientation" value="portrait" />
+    </platform>
+    <config-file mode="merge" parent="/manifest/application" platform="android">
+        <activity android:launchMode="singleTop" />
+    </config-file>
+    <plugin name="cordova-plugin-x-socialsharing" spec="~5.4.1" />
+</widget>

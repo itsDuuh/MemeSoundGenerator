@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    <script src="cordova.js"></script>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/fontawesome-all.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>MemeSound Generator PRO</title>
+    <script type="text/javascript" src="js/SocialSharing.js"></script>
+</head>
+
+<body>
+    <header id="header-main" style="position: fixed; width: 100%; z-index: 2;"> 
+        <div class="container">
+            <nav class="navbar-nav navbar-light">
+                <form class="form-inline">
+
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar Memes" id="txtBuscaMemes" ria-label="Search">
+                    <button class="btn btn-light my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </nav>            
+        </div>
+    </header>
+    <main id="main-content" style="height: 100%; background: #CCC; margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="memes">
+                    <div class="cols col-xs-4" id="meme0">
+                        <audio src="res/mp3/eu-vou-cair.mp3" id="euVouCair"/></audio>
+                        <div>
+                            <img class="card-img-top" src="res/img/eu-vou-cair.png" onclick="$('#euVouCair').trigger('play');" id="play">
+                        </div>
+                        <a href="#" onclick="window.plugins.socialsharing.share(null, null, 'www/res/mp3/eu-vou-cair.mp3', null)">Eu Vou Cair</a>
+                    </div>
+                    <div class="cols col-xs-4" id="meme1">
+                        <audio src="res/mp3/me-derrubaram-aqui.mp3" id="meDerrubaramAqui"></audio>
+                            <div>
+                                <img class="card-img-top" src="res/img/me-derrubaram-aqui.png" onclick="$('#meDerrubaramAqui').trigger('play');" id="play">
+                            </div>
+                        <a href="#" onclick="window.plugins.socialsharing.share(null, null, 'www/res/mp3/me-derrubaram-aqui.mp3', null)">Me Derrubaram Aqui</a>
+                    </div>
+                    <div class="cols col-xs-4" id="meme2">
+                        <audio src="res/mp3/abre-essa-merda.mp3" id="abreEssaMerda"></audio>
+                        <div>
+                            <img class="card-img-top" src="res/img/abre-essa-merda.png" onclick="$('#abreEssaMerda').trigger('play');" id="play">
+                        </div>
+                        <a href="#" onclick="window.plugins.socialsharing.share(null, null, 'www/res/mp3/abre-essa-merda.mp3', null)">Abre Essa Merda</a>                    
+                    </div>
+
+                    <div class="cols col-xs-4" id="meme3">
+                        <audio src="res/mp3/bambam-fazendo-birl.mp3" id="birl"></audio>
+                        <div>
+                            <img class="card-img-top" src="res/img/bambam-fazendo-birl.jpg" onclick="$('#birl').trigger('play');" id="play">
+                        </div>    
+                        <a href="#" onclick="window.plugins.socialsharing.share(null, null, 'www/res/mp3/bambam-fazendo-birl.mp3', null)">Biiiiirl</a>                    
+                    </div>
+
+                    <div class="cols col-xs-4" id="meme4">
+                        <audio src="res/mp3/para-com-essa-porra.mp3" id="paraComEssaPorra"></audio>
+                        <div>
+                            <img class="card-img-top" src="res/img/para-com-essa-porra.jpg" onclick="$('#paraComEssaPorra').trigger('play');" id="play">
+                        </div>
+                        <a href="#" onclick="window.plugins.socialsharing.share(null, null, 'www/res/mp3/para-com-essa-porra.mp3', null)">Para Com Essa Porra</a>                    
+                    </div>
+
+                    <div class="cols col-xs-4" id="meme5">
+                        <audio src="res/mp3/gas-meme-sound.mp3" id="gasMemeSound"></audio>
+                        <div>
+                            <img class="card-img-top" src="res/img/oh-o-gas.jpg" onclick="$('#gasMemeSound').trigger('play');" id="play">
+                        </div>
+                        <a href="#" onclick="window.plugins.socialsharing.share(null, null, 'www/res/mp3/gas-meme-sound.mp3', null)">Oh o Gas</a>                   
+                    </div>
+
+                    <div class="cols col-xs-4" id="meme6">
+                        <audio src="res/mp3/ta-uma-porra.mp3" id="taUmaPorra"></audio>
+                        <div>
+                            <img class="card-img-top" src="res/img/ta-uma-porra.jpg" onclick="$('#taUmaPorra').trigger('play');" id="play">
+                        </div>
+                        <a href="#" onclick="window.plugins.socialsharing.share(null, null, 'www/res/mp3/ta-uma-porra.mp3', null)">Ta Uma Porra</a>
+                        
+                    </div>
+
+                    <div class="cols col-xs-4" id="meme7">
+                        <audio src="res/mp3/vem-monstro.mp3" id="vemMonstro"></audio>
+                        <div>
+                            <img class="card-img-top" src="res/img/vem-monstro.jpg" onclick="$('#vemMonstro').trigger('play');" id="play">
+                        </div>
+                        <a href="#" onclick="window.plugins.socialsharing.share(null, null, 'www/res/mp3/vem-monstro.mp3', null)">Vem Monstro</a>  
+                    </div>
+
+                    <div class="cols col-xs-4" id="meme8">
+                        <audio src="res/mp3/porra-jamelao.mp3" id="porraJamelao"></audio>
+                        <div>
+                            <img class="card-img-top" src="res/img/porra-jamelao.jpg" onclick="$('#porraJamelao').trigger('play');" id="play">
+                        </div>
+                        <a href="#" onclick="window.plugins.socialsharing.share(null, null, 'www/res/mp3/porra-jamelao.mp3', null)">Porra Jamelão</a>                    
+                    </div>
+
+                    <div class="cols col-xs-4" id="meme9">
+                        <audio src="res/mp3/eita-cuzao.mp3" id="eitaCuzao"></audio>
+                        <div>  
+                            <img class="card-img-top" src="res/img/eita-cuzao.jpg" onclick="$('#eitaCuzao').trigger('play');" id="play"> 
+                        </div>                        
+                        <a href="#" onclick="window.plugins.socialsharing.share(null, null, 'www/res/mp3/eita-cuzao.mp3', null)">Eeeita Cuzaao</a>
+                    </div>
+
+                    <div class="cols col-xs-4" id="meme10">
+                        <audio src="res/mp3/taffarel-meme.mp3" id="taffarelMeme"></audio>
+                        <div>
+                            <img class="card-img-top" src="res/img/taffarel-meme.jpg" onclick="$('#taffarelMeme').trigger('play');" id="play">
+                        </div>
+                        <a href="#" onclick="window.plugins.socialsharing.share(null, null, 'www/res/mp3/taffarel-meme.mp3', null)">Taffarel Meme</a>
+                    </div>
+
+                    <div class="cols col-xs-4" id="meme11">
+                        <audio src="res/mp3/hoje-nao.mp3" id="hojeNao"></audio>
+                        <div>
+                            <img class="card-img-top" src="res/img/hoje-nao.jpg" onclick="$('#hojeNao').trigger('play');" id="play">
+                        </div>
+                        <a href="#" onclick="window.plugins.socialsharing.share(null, null, 'www/res/mp3/hoje-nao.mp3', null)">Hoje nao, Hoje nao</a>                    
+                    </div>
+                    <div class="cols col-xs-4" id="meme12">
+                        <audio src="res/mp3/olha-o-pastel.mp3" id="olhaOpastel"></audio>
+                        <div>
+                            <img class="card-img-top" src="res/img/olha-o-pastel.png" onclick="$('#olhaOpastel').trigger('play');" id="play">
+                        </div>
+                        <a href="#" onclick="window.plugins.socialsharing.share(null, null, 'www/res/mp3/olha-o-pastel.mp3', null)">Olha o Pastel</a>                    
+                    </div>
+                    <div class="cols col-xs-4" id="meme13">
+                        <audio src="res/mp3/mais-de-8000.mp3" id="maisDe8000"></audio>
+                        <div>
+                            <img class="card-img-top" src="res/img/mais-de-8000.png" onclick="$('#maisDe8000').trigger('play');" id="play">
+                        </div>
+                        <a href="#" onclick="window.plugins.socialsharing.share(null, null, 'www/res/mp3/mais-de-8000.mp3', null)">Mais de 8000</a>                    
+                    </div>
+                    <div class="cols col-xs-4" id="meme14">
+                        <audio src="res/mp3/no-ceu-tem-pao.mp3" id="noCeuTemPao"></audio>
+                        <div>
+                            <img class="card-img-top" src="res/img/no-ceu-tem-pao.jpg" onclick="$('#noCeuTemPao').trigger('play');" id="play">
+                        </div>
+                        <a href="#" onclick="window.plugins.socialsharing.share(null, null, 'www/res/mp3/no-ceu-tem-pao.mp3', null)">No Ceu Tem Pao</a>                    
+                    </div>
+                </div> 
+            </div>
+
+
+        </div>
+    </main>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
